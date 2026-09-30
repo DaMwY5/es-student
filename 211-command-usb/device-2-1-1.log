@@ -1,0 +1,27 @@
+режим: программная модель, физическая плата не использовалась
+примечание: USB ID обозначает модель Pico; нулевой серийный номер — заполнитель
+примечание: время и частоты расчётные; стек, куча и GPIO моделируются
+задание: 2.1.1
+проект: 211-command-usb
+устройство: 2e8a:000a
+серийный номер: 0000000000000000
+порт: MODEL (не COM-порт)
+начало: 2026-09-30T20:00:37
+   0.000 --> enable
+   0.001 <-- enable
+   0.140 <-- inf cmd_led:1 led on
+   2.000 --> disable
+   2.001 <-- disable
+   2.160 <-- inf cmd_led:1 led off
+   4.000 --> info
+   4.001 <-- info
+   4.100 <-- project: 211-command-usb
+   4.100 <-- repo: https://github.com/DaMwY5/es-student
+   4.100 <-- board: pico
+   4.100 <-- serial: 0000000000000000
+   4.100 <-- chip: manufacturer 0x927, part 0x0002, revision 2
+   4.100 <-- pico-sdk: 2.3.0
+   6.000 --> nosuchcommand
+   6.001 <-- nosuchcommand
+   6.280 <-- err handle_command:1 unknown command: nosuchcommand
+итог: отправлено команд 4, принято строк 13

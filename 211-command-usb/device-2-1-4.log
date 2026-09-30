@@ -1,0 +1,73 @@
+режим: программная модель, физическая плата не использовалась
+примечание: USB ID обозначает модель Pico; нулевой серийный номер — заполнитель
+примечание: время и частоты расчётные; стек, куча и GPIO моделируются
+задание: 2.1.4
+проект: 211-command-usb
+устройство: 2e8a:000a
+серийный номер: 0000000000000000
+порт: MODEL (не COM-порт)
+начало: 2026-09-30T20:00:41
+   0.000 --> fw_info
+   0.001 <-- fw_info
+   0.160 <-- object          address     value
+   0.160 <-- main            0x10000339  0xb5f8
+   0.160 <-- fw_info         0x1000072d  0x4b3a
+   0.160 <-- commands        0x10007658
+   0.160 <-- - enable        0x10000281
+   0.160 <-- - disable       0x100002bd
+   0.160 <-- - info          0x100002f9
+   0.160 <-- - version       0x10000301
+   0.160 <-- - ping          0x10000309
+   0.160 <-- - mem_info      0x10000319
+   0.160 <-- - fw_info       0x10000321
+   0.160 <-- - dev_info      0x10000329
+   0.160 <-- - boot_info     0x10000331
+   0.160 <-- DEVICE_PROJECT  0x10007704  211-command-usb
+   0.160 <-- DEVICE_BOARD    0x10007758  pico
+   0.160 <-- data_variable   0x20000fdc  101
+   0.160 <-- bss_variable    0x2000209c  1
+   0.160 <-- stack_variable  0x20041f80  1946
+   0.160 <-- heap_variable   0x20002598  1951
+   2.000 --> fw_info
+   2.001 <-- fw_info
+   2.160 <-- object          address     value
+   2.160 <-- main            0x10000339  0xb5f8
+   2.160 <-- fw_info         0x1000072d  0x4b3a
+   2.160 <-- commands        0x10007658
+   2.160 <-- - enable        0x10000281
+   2.160 <-- - disable       0x100002bd
+   2.160 <-- - info          0x100002f9
+   2.160 <-- - version       0x10000301
+   2.160 <-- - ping          0x10000309
+   2.160 <-- - mem_info      0x10000319
+   2.160 <-- - fw_info       0x10000321
+   2.160 <-- - dev_info      0x10000329
+   2.160 <-- - boot_info     0x10000331
+   2.160 <-- DEVICE_PROJECT  0x10007704  211-command-usb
+   2.160 <-- DEVICE_BOARD    0x10007758  pico
+   2.160 <-- data_variable   0x20000fdc  102
+   2.160 <-- bss_variable    0x2000209c  2
+   2.160 <-- stack_variable  0x20041f80  1946
+   2.160 <-- heap_variable   0x20002598  1951
+   4.000 --> fw_info
+   4.001 <-- fw_info
+   4.160 <-- object          address     value
+   4.160 <-- main            0x10000339  0xb5f8
+   4.160 <-- fw_info         0x1000072d  0x4b3a
+   4.160 <-- commands        0x10007658
+   4.160 <-- - enable        0x10000281
+   4.160 <-- - disable       0x100002bd
+   4.160 <-- - info          0x100002f9
+   4.160 <-- - version       0x10000301
+   4.160 <-- - ping          0x10000309
+   4.160 <-- - mem_info      0x10000319
+   4.160 <-- - fw_info       0x10000321
+   4.160 <-- - dev_info      0x10000329
+   4.160 <-- - boot_info     0x10000331
+   4.160 <-- DEVICE_PROJECT  0x10007704  211-command-usb
+   4.160 <-- DEVICE_BOARD    0x10007758  pico
+   4.160 <-- data_variable   0x20000fdc  103
+   4.160 <-- bss_variable    0x2000209c  3
+   4.160 <-- stack_variable  0x20041f80  1946
+   4.160 <-- heap_variable   0x20002598  1951
+итог: отправлено команд 3, принято строк 60

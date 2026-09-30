@@ -1,0 +1,73 @@
+режим: программная модель, физическая плата не использовалась
+примечание: USB ID обозначает модель Pico; нулевой серийный номер — заполнитель
+примечание: время и частоты расчётные; стек, куча и GPIO моделируются
+задание: 2.2.5
+проект: 221-command-time
+устройство: 2e8a:000a
+серийный номер: 0000000000000000
+порт: MODEL (не COM-порт)
+начало: 2026-09-30T20:00:52
+   0.000 --> clk_info
+   0.001 <-- clk_info
+   0.002 <-- signal     set_khz measured_khz
+   0.002 <-- clk_ref      12000        12000
+   0.002 <-- clk_sys     125000       125000
+   0.002 <-- clk_peri    125000       125000
+   0.002 <-- clk_usb      48000        48000
+   0.002 <-- clk_adc      48000        48000
+   0.002 <-- rosc             -         6500
+   1.000 --> main_time_reset
+   1.001 <-- main_time_reset
+   1.002 <-- max reset
+   3.000 --> main_time_exec
+   3.001 <-- main_time_exec
+   3.002 <-- iteration avg 1.98 us, max 2 us
+   4.000 --> calc_pi
+   4.001 <-- calc_pi
+   8.682 <-- pi: 3.14159165
+   8.682 <-- time: 4680 ms
+  10.000 --> clk_sys_low
+  10.001 <-- clk_sys_low
+  10.002 <-- inf clk_sys_set:1 clk_sys 62500 kHz
+  11.000 --> clk_info
+  11.001 <-- clk_info
+  11.002 <-- signal     set_khz measured_khz
+  11.002 <-- clk_ref      12000        12000
+  11.002 <-- clk_sys      62500        62500
+  11.002 <-- clk_peri     48000        48000
+  11.002 <-- clk_usb      48000        48000
+  11.002 <-- clk_adc      48000        48000
+  11.002 <-- rosc             -         6500
+  12.000 --> uptime
+  12.001 <-- uptime
+  12.002 <-- uptime: 14002 ms
+  14.000 --> uptime
+  14.001 <-- uptime
+  14.002 <-- uptime: 16002 ms
+  15.000 --> main_time_reset
+  15.001 <-- main_time_reset
+  15.002 <-- max reset
+  17.000 --> main_time_exec
+  17.001 <-- main_time_exec
+  17.002 <-- iteration avg 4.02 us, max 4 us
+  18.000 --> calc_pi
+  18.001 <-- calc_pi
+  27.362 <-- pi: 3.14159165
+  27.362 <-- time: 9360 ms
+  29.000 --> clk_sys_default
+  29.001 <-- clk_sys_default
+  29.002 <-- inf clk_sys_set:1 clk_sys 125000 kHz
+  30.000 --> clk_info
+  30.001 <-- clk_info
+  30.002 <-- signal     set_khz measured_khz
+  30.002 <-- clk_ref      12000        12000
+  30.002 <-- clk_sys     125000       125000
+  30.002 <-- clk_peri     48000        48000
+  30.002 <-- clk_usb      48000        48000
+  30.002 <-- clk_adc      48000        48000
+  30.002 <-- rosc             -         6500
+  31.000 --> calc_pi
+  31.001 <-- calc_pi
+  35.682 <-- pi: 3.14159165
+  35.682 <-- time: 4680 ms
+итог: отправлено команд 14, принято строк 49
