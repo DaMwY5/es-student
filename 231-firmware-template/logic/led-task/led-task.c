@@ -17,6 +17,7 @@ static uint64_t half_period_us(void)
 void led_task_init(void)
 {
     blink_period_ms = 1000;
+    led_on = false;
     led_task_set_state(LED_STATE_BLINK);
 }
 
@@ -31,14 +32,14 @@ void led_task_set_state(led_state_t state)
         led_on = true;
         break;
     case LED_STATE_BLINK:
-        led_on = true;
+        led_on = !led_on;
         last_toggle_us = systime_us();
         break;
     default:
         return;
     }
     led_state = state;
-    // Первое включение при входе в мигание выполняется сразу.
+    // Первое переключение при входе в мигание выполняется сразу.
     platform_led_set(led_on);
 }
 

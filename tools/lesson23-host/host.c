@@ -214,6 +214,10 @@ static void test(void)
     }
     execute("led_period 0\r", "error: period_ms must be greater than 0");
     execute("led_enable ignored args\r", "led: on");
+    assert(pins[25]);
+    execute("led_blink\r", "led: blink");
+    assert(!pins[25]); // вход из ON сразу переключает физический уровень
+    execute("led_enable\r", "led: on");
     execute("blink\r", "error: unknown command 'blink', try help");
     execute("led_period 1 2 3 4 5\r", "error: command longer than 63 characters or 4 arguments");
     assert(led_task_get_state() == LED_STATE_ON);
