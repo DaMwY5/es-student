@@ -1,0 +1,31 @@
+{
+  "mode": "software model, not hardware measurements",
+  "artifacts": [
+    "device-3-1-1.log",
+    "device-3-1-2.log",
+    "device-3-1-3.log",
+    "telemetry.csv",
+    "telemetry.png",
+    "rc.csv",
+    "rc.png",
+    "rc.log"
+  ],
+  "execution": "Real project and library C sources compiled by host GCC, mock SDK",
+  "clock": "Virtual time; USB output and task overhead are assumptions, not measurements",
+  "adc": "12-bit test codes, channel 0: sine test input or RC model; channel 4: 876/877",
+  "rc": {
+    "R_kohm": 10,
+    "C_uF": 100,
+    "tau_s": 1,
+    "equation": "V(t+dt)=target+(V(t)-target)*exp(-dt/tau)",
+    "quantization": "12 bit"
+  },
+  "hardware_not_verified": [
+    "voltage accuracy",
+    "reference noise",
+    "die temperature",
+    "GPIO electrical behaviour",
+    "physical RC transients"
+  ],
+  "reproduce": "python tools/test_lesson31.py --generate-model"
+}

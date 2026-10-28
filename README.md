@@ -2,6 +2,13 @@
 
 Практические работы курса «Встраиваемые системы».
 
+Занятие 3.1: `311-adc` — все пять пунктов: напряжение, температура, телеметрия,
+приём данных в Python и RC-анализ. Физической Pico и RC-цепи нет:
+логи, CSV, графики и τ — **программная модель, не аппаратные измерения**.
+Происхождение данных описано в `311-adc/model-data.json` и `311-adc/README.md`.
+Тесты и воспроизведение: `python tools/test_lesson31.py --generate-model`.
+Исходные скрипты из методички сохранены без изменений; старые проекты и `libs/` не менялись.
+
 Занятие 2.1: `211-command-usb` — строковые команды, таблица обработчиков и исследование памяти.
 
 Занятие 2.2: `221-command-time` — частоты, неблокирующее мигание, расчёт π и профилирование.
@@ -79,3 +86,13 @@ SDK USB, GPIO, часы и идентификаторы заменены: сер
 [![2.3.9 Изменение требований](https://github.com/DaMwY5/es-student/actions/workflows/check-2-3-9.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-2-3-9.yml)
 
 [![2.3.9д Долгое нажатие](https://github.com/DaMwY5/es-student/actions/workflows/check-2-3-9d.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-2-3-9d.yml)
+
+[![3.1.1 Измерение напряжения](https://github.com/DaMwY5/es-student/actions/workflows/check-3-1-1.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-3-1-1.yml)
+
+[![3.1.2 Измерение температуры](https://github.com/DaMwY5/es-student/actions/workflows/check-3-1-2.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-3-1-2.yml)
+
+[![3.1.3 Телеметрия измерений](https://github.com/DaMwY5/es-student/actions/workflows/check-3-1-3.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-3-1-3.yml)
+
+[![3.1.4 Считывание данных в Python](https://github.com/DaMwY5/es-student/actions/workflows/check-3-1-4.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-3-1-4.yml)
+
+[![3.1.5 Исследование RC-цепи](https://github.com/DaMwY5/es-student/actions/workflows/check-3-1-5.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-3-1-5.yml)

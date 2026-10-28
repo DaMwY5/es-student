@@ -1,0 +1,51 @@
+режим: ПРОГРАММНАЯ МОДЕЛЬ, физическая Pico не использовалась
+метод: настоящий код C, но ADC, GPIO, USB, часы и идентификаторы подставные
+примечание: серийный номер нулевой, USB ID обозначает только тип модели
+примечание: напряжение и температура — тестовые значения ADC, не измерения
+задание: 3.1.1
+проект: 311-adc
+устройство: 2e8a:000a
+серийный номер: 0000000000000000
+порт: MODEL (не COM-порт)
+начало: виртуальное время 0
+   0.000 --> 
+   0.500 --> help
+   0.500 <-- help
+   0.500 <-- help             list of commands
+   0.500 <-- info             device passport
+   0.500 <-- uptime           time since reset
+   0.500 <-- led_enable       LED on
+   0.500 <-- led_disable      LED off
+   0.500 <-- led_blink        LED blinking
+   0.500 <-- led_period       set period: led_period <period_ms>
+   0.500 <-- button           button state and press count
+   0.500 <-- pi_start         start calculation: pi_start [<terms>]
+   0.500 <-- pi               calculation state or result
+   0.500 <-- profiling        stopwatch results
+   0.501 <-- profiling_reset  reset stopwatches
+   0.501 <-- get_voltage      voltage on GP26, ADC input 0
+   0.501 <-- get_temp         chip temperature, degrees Celsius
+   0.501 <-- tm_start         start telemetry: tm_start [<period_ms>]
+   0.501 <-- tm_stop          stop telemetry
+   0.501 <-- charge_on        charge RC circuit from GP22
+   0.501 <-- charge_off       discharge RC circuit through GP22
+   1.500 --> info
+   1.500 <-- info
+   1.500 <-- name: es-adc
+   1.500 <-- version: 1.0.0
+   1.500 <-- project: 311-adc
+   1.500 <-- repo: https://github.com/DaMwY5/es-student
+   1.500 <-- board: pico
+   1.500 <-- serial: 0000000000000000
+   1.500 <-- chip: manufacturer 0x927, part 0x0002, revision 2
+   1.500 <-- pico-sdk: 2.3.0
+   2.500 --> get_voltage
+   2.500 <-- get_voltage
+   2.500 <-- voltage: 1.653 V
+   3.500 --> get_voltage
+   3.500 <-- get_voltage
+   3.500 <-- voltage: 1.648 V
+   4.500 --> get_voltage
+   4.500 <-- get_voltage
+   4.500 <-- voltage: 1.644 V
+итог: отправлено кадров 6, принято строк 34

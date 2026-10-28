@@ -1,0 +1,11 @@
+mode = SOFTWARE MODEL, NOT HARDWARE MEASUREMENTS
+source = real firmware C with mock ADC; ideal RC, R=10 kohm, C=100 uF
+note = no physical board, resistor or capacitor was used
+R_kohm = 10
+C_uf = 100
+tau_expected_s = 1.000
+tau_min_s = 0.760
+tau_max_s = 1.260
+tau_charge_s = 0.960
+tau_discharge_s = 0.970
+result = ok
