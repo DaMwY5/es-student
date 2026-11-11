@@ -2,6 +2,11 @@
 
 Практические работы курса «Встраиваемые системы».
 
+Занятие 3.2: [`321-audio-recorder`](321-audio-recorder) — таймеры, DMA,
+запись звука в 16 и 8 бит, испытательная мелодия и сторожевой таймер.
+Логи и WAV — **программная модель, не измерения на Pico**.
+Воспроизведение: `python tools/test_lesson32.py --generate-model`.
+
 Занятие 3.1: `311-adc` — все пять пунктов: напряжение, температура, телеметрия,
 приём данных в Python и RC-анализ. Физической Pico и RC-цепи нет:
 логи, CSV, графики и τ — **программная модель, не аппаратные измерения**.
@@ -96,3 +101,19 @@ SDK USB, GPIO, часы и идентификаторы заменены: сер
 [![3.1.4 Считывание данных в Python](https://github.com/DaMwY5/es-student/actions/workflows/check-3-1-4.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-3-1-4.yml)
 
 [![3.1.5 Исследование RC-цепи](https://github.com/DaMwY5/es-student/actions/workflows/check-3-1-5.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-3-1-5.yml)
+
+[![3.2.1 Индикатор записи](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-1.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-1.yml)
+
+[![3.2.2 Захват по таймеру](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-2.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-2.yml)
+
+[![3.2.3 Захват блока через DMA](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-3.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-3.yml)
+
+[![3.2.4 Поток с двойной буферизацией](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-4.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-4.yml)
+
+[![3.2.5 Запись испытательного сигнала](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-5.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-5.yml)
+
+[![3.2.6 Сторожевой таймер](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-6.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-6.yml)
+
+[![3.2.7 Запись звука](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-7.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-7.yml)
+
+[![3.2.7д Запись в 8 бит](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-7d.yml/badge.svg)](https://github.com/DaMwY5/es-student/actions/workflows/check-3-2-7d.yml)
