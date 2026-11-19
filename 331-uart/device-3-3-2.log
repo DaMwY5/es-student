@@ -1,0 +1,72 @@
+режим: ПРОГРАММНАЯ МОДЕЛЬ — физическая Pico и провода не использовались
+источник: команды и задачи C, идеализированные модели RC, UART, FIFO и захвата
+время: виртуальное время отправки команды, не аппаратные замеры
+примечание: USB ID указывает тип модели, серийный номер — заполнитель
+задание: 3.3.2
+проект: 331-uart
+устройство: 2e8a:000a
+серийный номер: 0000000000000000
+порт: MODEL (не COM-порт)
+начало: виртуальное время 0
+   0.000 -->
+   0.500 --> help
+   0.500 <-- help
+   0.500 <-- help             list of commands
+   0.500 <-- info             device passport
+   0.500 <-- uptime           time since reset
+   0.500 <-- led_enable       LED on
+   0.500 <-- led_disable      LED off
+   0.500 <-- led_blink        LED blinking
+   0.500 <-- led_period       set period: led_period <period_ms>
+   0.500 <-- button           button state and press count
+   0.500 <-- pi_start         start calculation: pi_start [<terms>]
+   0.500 <-- pi               calculation state or result
+   0.500 <-- profiling        stopwatch results
+   0.500 <-- profiling_reset  reset stopwatches
+   0.500 <-- edge             rise and fall of the RC line: edge pp|od
+   0.500 <-- loop             UART0 loopback: loop internal|pins
+   0.500 <-- echo             send and receive with UART0: echo <text>
+   0.500 <-- link             UART0 to UART1 and back: link <text>
+   0.500 <-- baud_shift       UART1 baud offset: baud_shift <percent>
+   0.500 <-- text             send 32 characters from UART1 to UART0
+   0.500 <-- parity           UART0 and UART1 parity: none, even, odd
+   0.500 <-- block            receive 64 bytes: block irq|poll
+   0.500 <-- scope            UART0 line on ADC: scope <baud> <text>
+   1.500 --> info
+   1.500 <-- info
+   1.500 <-- name: es-uart
+   1.500 <-- version: 1.0.0
+   1.500 <-- project: 331-uart
+   1.500 <-- repo: https://github.com/DaMwY5/es-student
+   1.500 <-- board: pico
+   1.500 <-- serial: 0000000000000000
+   1.500 <-- chip: manufacturer 0x927, part 0x0002, revision 2
+   1.500 <-- pico-sdk: 2.3.0
+   2.500 --> loop internal
+   2.500 <-- loop internal
+   2.500 <-- loop: internal
+   3.000 --> echo ping
+   3.000 <-- echo ping
+   3.000 <-- rx: ping err: none
+   3.500 --> echo 0123456789ABCDEFGHIJKLMNOPQRSTUV
+   3.500 <-- echo 0123456789ABCDEFGHIJKLMNOPQRSTUV
+   3.500 <-- rx: 0123456789ABCDEFGHIJKLMNOPQRSTUV err: none
+   4.000 --> loop pins
+   4.000 <-- loop pins
+   4.000 <-- loop: pins
+   4.500 --> echo ping
+   4.500 <-- echo ping
+   4.500 <-- rx: ping err: none
+   5.000 --> echo 0123456789ABCDEFGHIJKLMNOPQRSTUV
+   5.000 <-- echo 0123456789ABCDEFGHIJKLMNOPQRSTUV
+   5.000 <-- rx: 0123456789ABCDEFGHIJKLMNOPQRSTUV err: none
+   5.500 --> echo 0123456789ABCDEFGHIJKLMNOPQRSTUVW
+   5.500 <-- echo 0123456789ABCDEFGHIJKLMNOPQRSTUVW
+   5.500 <-- error: text longer than 32
+   6.000 --> echo
+   6.000 <-- echo
+   6.000 <-- error: usage echo <text>
+   6.500 --> loop xx
+   6.500 <-- loop xx
+   6.500 <-- error: usage loop internal|pins
+итог: отправлено кадров 12, принято строк 49
